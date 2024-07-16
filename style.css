@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#landpg{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landpg div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:10px
+}
+
+#landpg div h1{
+    color: purple;
+}
+
+#landpg div img{
+    width:300px;
+    height:300px;
+    animation:img 2s  infinite;
+}
+ 
+@keyframes img{
+    0%{
+        transform: scale(0);
+    }50%{
+        transform: scale(1.1);
+    } 0%{
+        transform: scale(0);
+    }
+}
+
+
+#landpg div button{
+    padding: 10px;
+    background-color: aliceblue;
+    border: solid rgb(240, 163, 236) 2px;
+    border-radius: 50%;
+}
+
+#landpg div button:hover{
+    background-color: blueviolet;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color:rgba(255, 235, 205, 0.781);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: space-around;
+    z-index: 100;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+li:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.menuline {
+    background-color: black;
+    width: 20px;
+    height: 3px;
+    margin-bottom: 2px;
+}
+
+#cakes{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    padding: 10px;
+    width: 400px;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box img {
+    width: 220px;
+    border-radius: 20px;
+    height: 220px;
+    max-width: 220px;
+    justify-content: center;
+}
+
+
+img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.box {
+    padding: 10px;
+}
+
+#about {
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact {
+    text-align: center;
+}
+
+@media screen and (max-width:640px) {
+    .logo {
+        align-self: flex-start;
+        margin: 10px 0 0 20px;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav li {
+        display: block;
+        padding: 10px;
+    }
+
+    ul {
+        text-align: center;
+        padding: 0;
+        display: none;
+    }
+
+    .head {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .show {
+        display: block;
+    }
+
+}

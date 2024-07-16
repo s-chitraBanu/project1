@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<head>
+    <title>cake Fantasy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="">CakeFantasy</a>
+        </div>
+
+        <ul>
+            <li><a href="#landpg">Home </a></li>
+            <li><a href="#cakes">Cakes </a></li>
+            <li><a href="#about">About </a></li>
+            <li><a href="#contact">Contact </a></li>
+        </ul>
+        <div class="menu">
+            <div class="menuline"></div>
+            <div class="menuline"></div>
+            <div class="menuline"></div>
+        </div>
+    </nav>
+    <section id="landpg">
+        <div><img src="images/lp.png">
+            <h1>CakeFantasy</h1>
+            <p>We offer Cakes with low price and discounts , we use only best ,freshest ingredients in our cakes. </p>
+            <button>Order now</button>
+        </div>
+        </section>
+
+        <section id="cakes">
+    <div class="search">
+        <input placeholder="search">
+    </div>
+
+    <div class="boxes">
+        <div class="box"><img src="images/bforest.jpg"></div>
+        <div class="box"> <img src="images/wforest.jpg"></div>
+        <div class="box"> <img src="images/2tire.jpg"></div>
+        <div class="box"><img src="images/rainbow.jpg"></div>
+        <div class="box"><img src="images/3tire (1).jpg"></div>
+        <div class="box"><img src="images/download3.jpg"></div>
+        <div class="box"><img src="images/download (1).jpg"></div>
+        <div class="box"> <img src="images/wforest.jpg"></div>
+    </div>
+
+</section>
+
+    <section id="about">
+        <h1>About Us</h1><br><br>
+        <p>Welcome to <b>Cake Fantasy</b>, where we believe every occasion deserves a deliciously delightful treat.
+            Founded with a passion for baking and a commitment to quality, we specialize in crafting exquisite cakes
+            that add sweetness to your celebrations. At <b>Cake Fantasy</b>, we blend traditional recipes with
+            innovative designs to create cakes that not only look stunning but also taste heavenly. Whether you're
+            celebrating a birthday, wedding, anniversary, or any special moment, our cakes are crafted with love and
+            attention to detail.Beyond just cakes, we are dedicated to exceptional customer service. We understand the
+            importance of your celebrations, which is why we strive to make every order seamless and memorable. Your
+            satisfaction is our priority, and we are here to make your cake dreams come true.</p>
+    </section>
+    <hr>
+    <section id="contact">
+        <h1>Contact</h1><br>
+        <p>Mobile: 044-45454545</p>
+        <p>Email: CakeFantasy@gmail.com</p>
+        <p>Address: Chennai,TamilNadu</p>
+    </section><br>
+    <br>
+
+    <script>
+        var menu = document.querySelector(".menu")
+        var menulist = document.querySelector("nav ul")
+
+        menu.addEventListener("click", function () {
+            menulist.classList.toggle("show")
+        })
+    </script>
+
+</body>
+
+</html>
